@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>html</title>
+</head>
+<body>
+    <h1>Creating 2D Animation</h1>
+    <canvas id="mycanvas1" width="200px" height="100" style="border: 2px solid darksalmon;">
+    </canvas>
+    <canvas id="mycanvas2" width="200px" height="100" style="border: 2px solid darkkhaki;">
+    </canvas>
+    </canvas><canvas id="mycanvas3" width="200px" height="100" style="border: 2px solid darkgoldenrod;">
+    </canvas>
+        <script>
+            var canvas = document.getElementById("mycanvas1");
+            var c = canvas.getContext("2d");
+            c.moveTo(0,0);
+            c.lineTo(200,100);
+            c.stroke();
+            var canvas = document.getElementById("mycanvas2");
+            var c = canvas.getContext("2d");
+            c.beginPath();
+            c.arc(95,50,30,0,2*Math.PI);
+            c.stroke();
+            var canvas = document.getElementById("mycanvas3");
+            var c = canvas.getContext("2d");
+            c.font="20px Bad script,cursive";
+            c.strokeText("ANIME",10,50)
+        </script>
+</body>
+</html>

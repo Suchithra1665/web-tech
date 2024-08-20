@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>html</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        @font-face{
+            font-family: myFont;
+            src:url(font.ttf);
+        }
+        div.starting h1{
+            font-family: myFont;
+            font-size: 50px;
+            font-weight: 900;
+            color: aliceblue;
+            text-shadow: 0px 0px 5px goldenrod;
+        } 
+        img{
+            width: 25%;
+            margin-bottom: 5px;
+        }
+        div .one-botton{
+            padding: 5px;
+            border: 2px solid white;
+            border-radius: 50px;
+            font-size: 15px;
+        }
+        div .two-botton{
+            padding: 5px;
+            border: 2px solid white;
+            border-radius: 50px;
+            font-size: 15px;
+        }div .three-botton{
+            padding: 5px;
+            border: 2px solid white;
+            border-radius: 50px;
+            font-size: 15px;
+        }
+        div.rating h2{
+            font-family: myFont;
+            color: aliceblue;
+            text-shadow: 0px 0px 5px goldenrod;
+        }
+        .user_rating h2{
+            font-family: myFont;
+            color: aliceblue;
+            text-shadow: 0px 0px 5px goldenrod;
+        }
+        .side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+.right {
+  text-align: right;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.bar-container {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.bar-10 {width: 37%; height: 18px; background-color: gold;}
+.bar-9 {width: 25.4%; height: 18px; background-color: gold;}
+.bar-8 {width: 19.7%; height: 18px; background-color: gold;}
+.bar-7 {width: 7.4%; height: 18px; background-color: gold;}
+.bar-6 {width: 2.7%; height: 18px; background-color: gold;}
+.bar-5 {width: 1%; height: 18px; background-color: gold;}
+.bar-4 {width: 0.5%; height: 18px; background-color: gold;}
+.bar-3 {width: 0.5%; height: 18px; background-color: gold;}
+.bar-2 {width: 2.9%; height: 18px; background-color: gold;}
+.bar-1 {width: 2.8%; height: 18px; background-color: gold;}
+div.comments h2{
+            font-family: myFont;
+            color: aliceblue;
+            text-shadow: 0px 0px 5px goldenrod;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.testimonial-heading{
+  letter-spacing: 1px;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-heading span{
+  font-size: 1.3rem;
+  color: #252525;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.testimonial-box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:100%;
+}
+.testimonial-box{
+  width:500px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  background-color:#979797;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.profile-img{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong{
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span{
+  color: #979797;
+  font-size: 0.8rem;
+}
+.reviews{
+  color: #f9d71c;
+}
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.client-comment p{
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+.testimonial-box:hover{
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+
+@media(max-width:1060px){
+  .testimonial-box{
+      width:45%;
+      padding: 10px;
+  }
+}
+@media(max-width:790px){
+  .testimonial-box{
+      width:100%;
+  }
+  .testimonial-heading h1{
+      font-size: 1.4rem;
+  }
+}
+@media(max-width:340px){
+  .box-top{
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+  }
+  .reviews{
+      margin-top: 10px;
+  }
+}
+::selection{
+  color: #ffffff;
+  background-color: #252525;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="starting">
+    <h1>JuJuTsu Kaisen</h1>
+    <pre> 
+TV series • 2020- • 24m
+
+Episode 48 >
+    </pre>
+    <div class="display">
+    <img src="jjk.jpeg" alt="anime pic">
+    <video src="jjk.mp4" controls autoplay muted width="69%"></video>
+    </div>
+    <br>
+    <div class="content">
+       <botton class="one-botton">Animation</botton>
+       <botton class="two-botton">Action</botton>
+       <botton class="three-botton">Adventure</botton>
+       <p>A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself. He enters a shaman's school to be able to locate the demon's other body parts and thus exorcise himself.</p>
+       <p>Yuji Itadori, a kind-hearted teenager, joins his school's Occult Club for fun, but discovers that its members are actual sorcerers who can manipulate the energy between beings for their own use. He hears about a cursed talisman - the finger of Sukuna, a demon - and its being targeted by other cursed beings. Yuji eats the finger to protect his friends, and ends up becoming Sukuna's host. However, Yuji discovers that he has inherited magic and is able to control this power without interference from Sukuna. He joins the Tokyo Metropolitan Magic Technical College to consumes all of Sukuna's fingers, which will enable a full exorcism to take place that will free him.........</p>
+    </div>
+     <hr>
+     <span><b>Stars:</b></span><span style="margin-left: 20px;">Jun'ya Enoki  •  Yuma Uchida  •  Yuichi Nakamura</span>
+     <br>
+     <hr>
+     <div class="rating">
+        <h2>Rating:</h2>
+        <span>&#11088;</span>
+            <span>8.6/10</span>
+            <span style="color: dodgerblue; margin-left: 20px; font-size: 25px;">&#11090; </span>
+            <span style="color: dodgerblue;">Rate</span>
+            <span style="color: darkgreen; margin-left: 20px; font-size: 25px;">&#8605;</span>
+            <span>121</span>
+            <span style="color: grey;">&#x25B4;1</span>
+     </div>
+     <div class="user_rating">
+        <h2> User Ratings:</h2>
+        <p>Filter By Country</p>
+        <div class="row">
+            <div class="side">
+              <div>10 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-10"></div>
+              </div>
+            </div>
+            <div class="side right">
+              <div>37.0%(47K)</div>
+            </div>
+            <div class="side">
+              <div>9 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-9"></div>
+              </div>
+            </div>
+            <div class="side right">
+                <div>25.4%(32K)</div>
+            </div>
+            <div class="side">
+              <div>8 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-8"></div>
+              </div>
+            </div>
+            <div class="side right">
+                <div>19.7%(25K)</div>
+            </div>
+            <div class="side">
+              <div>7 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-7"></div>
+              </div>
+            </div>
+            <div class="side right">
+                <div>7.4%(9.4K)</div>
+            </div>
+            <div class="side">
+              <div>6 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-6"></div>
+              </div>
+            </div>
+            <div class="side right">
+                <div>2.7%(3.4K)</div>
+            </div>
+          </div>
+        <div class="row">
+            <div class="side">
+              <div>5 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-5"></div>
+              </div>
+            </div>
+            <div class="side right">
+                <div>1.0%(1.3K)</div>
+            </div>
+            <div class="side">
+              <div>4 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-4"></div>
+              </div>
+            </div>
+            <div class="side right">
+                <div>0.5%(632)</div>
+            </div>
+            <div class="side">
+              <div>3 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-3"></div>
+              </div>
+            </div>
+            <div class="side right">
+                <div>0.5%(676)</div>
+            </div>
+            <div class="side">
+              <div>2 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-2"></div>
+              </div>
+            </div>
+            <div class="side right">
+                <div>2.9%(3.7K)</div>
+            </div>
+            <div class="side">
+              <div>1 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-1"></div>
+              </div>
+            </div>
+            <div class="side right">
+                <div>2.8%(3.5K)</div>
+            </div>
+          </div>
+     </div>
+     <div class="comments">
+        <section id="com">
+        <h2>User Reviews:</h2>
+        <div class="testimonial-box-container">
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="https://play-lh.googleusercontent.com/3ha-TO-wWZA8IofnlU6tWsYJiBCYbqs8hvhB6BQnct1PgsYpAZhCPMKoYggHOX9z-1qM=w526-h296-rw" />
+                        </div>
+                        <div class="name-user">
+                            <strong>iftie6</strong>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Episode 3 review: I am a manga reader, and I won't spoil anything. This season is adapting one of the greatest Shounen Arc in history which is why I started to reading the manga in the first place. But storyline isn't the only main thing here, the anime adaption is also an important thing, and luckily Mappa is in charge of that. From the last 3 episodes, the anime adaption are pure masterpiece. Episode 3 was 10/10 to me. The animation, the artstyle, the art background, the visuals, the composition, the sound directing, the anime directing, the pacing of this story was everything 10/10. The ...</p>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="https://qph.cf2.quoracdn.net/main-qimg-deffe0bd0e8c5cc04b4ba763afd2a686-lq" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Infamous_Empire</strong>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Jujutsu Kaisen is an interesting beast of a series. When it first hit the mainstream anime community in 2020, many immediately took to praising it as one of the best Battle Shonens to come out of modern Jump, in spite of the fact that, in many other people’s eyes, it had yet to do anything all that notable or special to set itself apart from the competition. 
+                        
+                        A big part of this was, of course, manga readers hyping up what the series would eventually do later down the line, and ...</pre>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLnJhbmlhYXBwcy5hbmltZXByb2ZpbGVwaWN0dXJlX3NjcmVlbl8wXzE2ODM0ODYxMTBfMDUy/screen-0.jpg?fakeurl=1&type=.jpg" />
+                        </div>
+                        <div class="name-user">
+                            <strong>eksratu</strong>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>This show has MULTIPLE kickass openings and endings, crazy high production values, and enough slice-of-life scenes to flesh out its characters. I don't care too much for the magic system, but the animations and effects do a great job of selling it. Jujutsu Kaisen is a beautiful series with outstanding art direction, which lets it stand heads and shoulders above the competition visually.
+
+                        However, I have trouble taking the main story seriously. It has inconsistent stakes, unbelievably convenient writing, and awkward, start-and-stop pacing. The scattered conflicts feel unsatisfying to follow and silly to the point of breaking my suspension of disbelief. I think I might just ...</p>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxALUkf5XYkRTkjZVY5W3HeMkhokgJjq41Ww&s" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Tkit</strong>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Second season of Jujutsu Kaisen is truly astounding. It's incredible creative vision and ambition are only matched by disappointment coming from failures in achieving its enormous goals. To truly express my feelings about such a complicated piece of media I will have to go into spoiler teritory, but for now, until stated otherwise, I will avoid going in depth and assume you only watched the first season.
+                         So should you continue watching Jujutsu after its long introduction you had to go through that is the first season? It is hard to say as the continuation of this story is very... let's say uneven in its strenghts. ...</p>
+                </div>
+            </div>
+        </div>
+      </section>
+     </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>html</title>
+</head>
+<body>
+<h1> Full Stack</h1>
+<ul>
+  <li onclick="showDetails(this)" id="python" data-course="backEnd">Python</li>
+  <li onclick="showDetails(this)" id="javascript" data-course="middleEnd">javascript</li>  
+  <li onclick="showDetails(this)" id="html" data-course="frontEnd" >html</li>  
+</ul>
+<script>
+    function showDetails(course) {
+      let coursetype = course.getAttribute("data-course");
+      alert("The " + course.innerHTML + " is a " + coursetype + ".");
+    }
+    </script>
+</body>
+</html>
